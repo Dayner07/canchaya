@@ -1,0 +1,21 @@
+PROYECTO CANCHAYA
+Autores: Jesus Escobar - Santiago Villalobos - Dayner Hernandez
+
+1. BASE DE DATOS (PostgreSQL):
+   - Ejecutar el archivo database/database.sql en PostgreSQL (base de datos: postgres).
+
+2. BACKEND (FastAPI - Puerto 8000):
+   cd backend
+   python -m venv venv
+   venv\Scripts\activate
+   pip install -r requirements.txt
+   copy .env.example .env      (y poner la contrasena de PostgreSQL en DB_PASSWORD)
+   uvicorn main:app --reload
+
+3. FRONTEND (Next.js - Puerto 3000):
+   cd frontend
+   npm install
+   npm run dev
+
+4. USO:
+   Abrir http://localhost:3000 en el navegador.
